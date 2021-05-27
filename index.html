@@ -13,7 +13,7 @@
 </head>
 <body id="page_top">
                 <!-- шапка -->
-    <header class='header header-shadow'>
+    <header class='header'>
                 <!-- навигация -->
         <div class="container flex">
             <nav class="head-nav flex"> 
@@ -50,7 +50,7 @@
             <section class="hero">
                     <div class="container">
                         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                        <button class="hero-button" type="button"> Заказать услугу</button>
+                        <button class="hero-button" type="button" data-modal-open> Заказать услугу</button>
                     </div>
             </section>
         <!-- webstudio prefs -->
@@ -388,9 +388,15 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
-        <div class="modal">            
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" data-modal-close type="button">
+                <svg class="modal-icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>           
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
