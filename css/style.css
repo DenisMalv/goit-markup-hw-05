@@ -163,14 +163,14 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--text-color-black);
+
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item:hover,
 .item:focus {
   color: var(--text-color-accent);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -204,6 +204,7 @@ body {
 
   color: var(--text-color-standart);
 
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -215,9 +216,6 @@ body {
 .cont:hover,
 .cont:focus {
   color: var(--text-color-accent);
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========================== icons  ================================== */
@@ -288,16 +286,14 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition-duration: 250ms;
+  transition-property: background-color, box-shadow;
+  transition-duration: 1150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
   color: var(--text-color-white);
   background-color: var(--button-hero-bacgr-active-color);
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* <----------------webstudio prefs -----------------> */
 /*  ======== Вариант расположения элементов №1 =========
@@ -539,6 +535,7 @@ body {
   fill: #afb1b8;
   background-color: transparent;
 
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -547,9 +544,6 @@ body {
 .link-social:focus {
   background-color: var(--button-active-bcgr-color);
   fill: var(--text-color-white);
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* <------------------------ Clients ------------------------------->*/
@@ -587,16 +581,14 @@ body {
 
   fill: #afb1b8;
 
-  transition-duration: 250ms;
+  transition-property: fill, border-color;
+  transition-duration: 1250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-clients:hover,
 .icon-clients:focus {
   border-color: var(--button-active-bcgr-color);
   fill: var(--text-color-accent);
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* <--------------------footer-------------------> */
@@ -631,15 +623,13 @@ body {
 
   color: var(--text-color-white);
 
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress-map:hover,
 .footer-adress-map:focus {
   color: var(--text-color-accent);
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-adress-cont {
@@ -647,15 +637,13 @@ body {
 
   color: var(--text-color-address-link);
 
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress-cont:hover,
 .footer-adress-cont:focus {
   color: var(--text-color-accent);
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-follow {
@@ -735,6 +723,7 @@ body {
   padding-right: 22px;
   cursor: pointer;
 
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -745,9 +734,6 @@ body {
   background-color: var(--button-active-bcgr-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* <-----------portfolio card list-----------> */
@@ -771,6 +757,7 @@ body {
   width: calc((1200px - 90px) / 3);
   display: block;
 
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -779,9 +766,6 @@ body {
 .portf-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*========== Вариант расположения элементов №2 ==========
@@ -844,6 +828,7 @@ body {
   left: 0;
   overflow: auto;
 
+  transition-property: transform;
   transform: translatey(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -872,7 +857,10 @@ body {
   height: 100vh;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms linear, visibility 250ms linear;
+
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
